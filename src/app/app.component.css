@@ -1,0 +1,87 @@
+
+
+.header
+{
+  margin-top: 3rem;
+}
+
+
+.palette-row
+{
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 100%;
+}
+.color-selector-row
+{
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 100%;
+}
+.color-picker-margin
+{
+  margin-top: 1rem;
+}
+.color-picker
+{
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+}
+
+.centeredButton
+{
+  margin: auto;
+}
+
+.content
+{
+
+  margin-bottom: 1.5rem;
+}
+
+
+.test
+{
+  background-color: black;
+}
+
+#color0
+{
+  background-color: #112B3C;
+  height: 50px;
+}
+
+#color1
+{
+  background-color: #205375;
+  height: 50px;
+}
+
+#color2
+{
+  background-color: #F66B0E;
+  height: 50px;
+}
+
+#color3
+{
+  background-color: #EFEFEF;
+  height: 50px;
+}
+
+
+.center
+{
+  margin: auto;
+  width: 100%;
+
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class="col-"] {
+    width:100%;
+  }
+}
