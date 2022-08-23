@@ -10,10 +10,11 @@ export class AppComponent implements OnInit {
 title = 'color-palettes';
 ctx:any;
 colorCode:String;
-allCharacter :any = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+//allCharacter :any = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
 randomColor:any=[];
 colorValues:any=[];
 fontColorValues:any=[];
+
 constructor(){}
 ngOnInit()
 {
@@ -95,6 +96,7 @@ setFontColor1(event:any)
 
 generateImage()
 {
+
 var element = document.getElementById('paletteImage');
   element?.remove();
   for(var i=0;i<4;i++)
@@ -113,6 +115,7 @@ this.ctx.clearRect(0, 0, canvas.width, canvas.height);
 var grd = this.ctx.createLinearGradient(0,0,1200,675);
 grd.addColorStop(1,"#B0F3F1");
 grd.addColorStop(0,"#FFCFDF");
+
 //this.ctx.style.backgroundColor = grd;
 this.ctx.fillStyle = grd;
 this.ctx.fillRect(0,0,canvas.width, canvas.height);
@@ -122,7 +125,7 @@ this.ctx.font = "30px FontAwesome";
 this.ctx.fillStyle = '#00acee';
 this.ctx.fillText('\uF081',20,640);
 this.ctx.fill();
-this.ctx.font = "30px Times New Roman";
+this.ctx.font = "30px Helvetica";
 this.ctx.fillStyle = '#000000';
 this.ctx.fillText('@shubhamlashkan',60,640);
 this.ctx.fill();
@@ -130,7 +133,7 @@ this.ctx.font = "30px FontAwesome";
 this.ctx.fillStyle = '#8a3ab9';
 this.ctx.fillText('\uF16D',880,50);
 this.ctx.fill();
-this.ctx.font = "30px Times New Roman";
+this.ctx.font = "30px Helvetica";
 this.ctx.fillStyle = '#000000';
 this.ctx.fillText('@shubhamlashkan',920,50);
 this.ctx.fill();
@@ -182,6 +185,8 @@ yStart+=60;
 }
 
 }
+
+
 
 
 
